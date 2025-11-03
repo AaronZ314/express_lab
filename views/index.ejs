@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
+    <h1>Hello <%=locals.user || "Please log in"%></h1>
+    <p><a href="/users">Users Page</a></p>
+    <p><a href="/users/new">Create user</a></p>
 </body>
 </html>
