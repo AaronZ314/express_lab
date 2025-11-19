@@ -16,11 +16,6 @@ app.get('/', (req,res)=>{
     console.log('Here');
     res.render("index", {user:"Aaron!"});
 }); //this function will run when someone goes to the root folder
-app.get('/new', (req,res)=>{
-    res.render('users/new',{firstName: "Please enter your name."});
-});
-
-
 
 app.listen(3030);
 
